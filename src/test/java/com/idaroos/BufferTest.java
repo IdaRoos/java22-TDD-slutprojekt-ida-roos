@@ -73,7 +73,6 @@ class BufferTest {
         producer.addItem(mockItem);
         assertEquals(mockItem, consumer.removeItem());
         assertTrue(buffer.getBufferQueue().isEmpty());
-
     }
 
 
@@ -82,7 +81,6 @@ class BufferTest {
     @DisplayName("Testing if producer adds item when value is null")
     public void testAddItemWhenNullItem() {
         assertThrows(NullPointerException.class, () -> producer.addItem(new MockItem(null)));
-
     }
 
     // Testing if producer produces item if value is empty string
@@ -109,7 +107,7 @@ class BufferTest {
         producer.addItem(new MockItem("stringItem"));
         producer.addItem(new MockItem("123"));
         producer.addItem(new MockItem("!@#"));
-        assertEquals(4, buffer.getBufferQueue().size());
+        assertEquals(3, buffer.getBufferQueue().size());
     }
 
 
