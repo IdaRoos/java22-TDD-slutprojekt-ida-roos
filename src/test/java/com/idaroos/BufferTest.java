@@ -33,11 +33,11 @@ class BufferTest {
     public void testAddItemBufferList() {
         MockItem mockItem = new MockItem("test");
         producer.addItem(mockItem);
-        assertFalse(buffer.getBufferQueue().isEmpty(), "Buffer list should not be empty after adding an item");
+        assertFalse(buffer.getBufferQueue().isEmpty());
     }
 
     @Test
-    @DisplayName("Test when adding multiple items to Buffer list")
+    @DisplayName("Test adding multiple items to Buffer list")
     public void testAddMultipleItems() {
 
         MockItem mockItem1 = new MockItem("item1");
@@ -50,8 +50,21 @@ class BufferTest {
         producer.addItem(mockItem3);
         producer.addItem(mockItem4);
         producer.addItem(mockItem5);
-        assertEquals(5, buffer.getBufferQueue().size(), "Buffer should contain the correct number of items");
+        assertEquals(5, buffer.getBufferQueue().size());
     }
+
+    @Test
+    @DisplayName("Test specific items are added to Buffer")
+    public void testSpecificItemsAdded() {
+        MockItem item1 = new MockItem("item1");
+        MockItem item2 = new MockItem("item2");
+        producer.addItem(item1);
+        producer.addItem(item2);
+        assertEquals(2, buffer.getBufferQueue().size());
+        assertTrue(buffer.getBufferQueue().contains(item1));
+        assertTrue(buffer.getBufferQueue().contains(item2));
+    }
+
 
 
 
@@ -61,10 +74,8 @@ class BufferTest {
     public void testRemoveItemFromBuffer() {
         MockItem mockItem = new MockItem("test");
         producer.addItem(mockItem);
-        assertFalse(buffer.getBufferQueue().isEmpty(), "Buffer list should not be empty before removing an item");
-
         assertEquals(mockItem, consumer.removeItem());
-        assertTrue(buffer.getBufferQueue().isEmpty(), "Buffer list should be empty after removing the item");
+        assertTrue(buffer.getBufferQueue().isEmpty());
 
     }
 
@@ -82,42 +93,23 @@ class BufferTest {
     @DisplayName("Testing addItem if item value is empty string")
     public void testAddItemWhenEmptyStringItem() {
         MockItem mockItem = new MockItem("");
+        producer.addItem(mockItem);
         assertEquals(true,  producer.addItem(mockItem));
-        assertFalse(buffer.getBufferQueue().isEmpty(), "Buffer list should not be empty after adding an item");
     }
 
+    // Testing if added correct to buffer list when item value is empty string
     @Test
-    void testRemoveBlocksWhenEmptyAndResumesWhenNotified() throws InterruptedException {
-        Thread consumerThread = new Thread(() -> {
-            buffer.remove(); // This should block initially
-        });
-
-        consumerThread.start();
-
-        // Give some time for the consumer thread to potentially block on empty buffer
-        Thread.sleep(500);
-
-        Thread.State consumerState = consumerThread.getState();
-        assertTrue(consumerState == Thread.State.WAITING || consumerState == Thread.State.TIMED_WAITING,
-                "Consumer thread should be in WAITING or TIMED_WAITING state");
-
-        // Now, simulate a producer adding an item, which should notify the consumer
-        buffer.add(new Item("test"));
-
-        // Wait a bit to give the consumer thread time to be notified and resume
-        Thread.sleep(500);
-
-        consumerState = consumerThread.getState();
-        assertFalse(consumerState == Thread.State.WAITING || consumerState == Thread.State.TIMED_WAITING,
-                "Consumer thread should no longer be in WAITING or TIMED_WAITING state");
-
-        consumerThread.join(); // Wait for the consumer thread to finish
+    @DisplayName("Testing addItem if item value is empty string")
+    public void testBufferWhenEmptyStringItem() {
+        MockItem mockItem = new MockItem("");
+        producer.addItem(mockItem);
+        assertFalse(buffer.getBufferQueue().isEmpty());
     }
 
 
     @Test
-    @DisplayName("Testing that method removeItem removes item from empty buffer list")
-    public void testRemoveItemFromEmptyBuffer() {
+    @DisplayName("Test that buffer handles thread interruption during remove")
+    public void testThreadInterruptionOnRemove() {
 
         Thread pThread = new Thread(() -> assertThrows(InterruptedException.class, () ->
                 consumer.removeItem()));

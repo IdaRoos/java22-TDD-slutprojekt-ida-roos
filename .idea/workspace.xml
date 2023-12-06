@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86e1bb8f-cb1b-4063-9a60-c2e39d2e24c4" name="Changes" comment="inital commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cff3c4cb-19d8-4935-9533-82700b75e567" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +13,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -26,20 +20,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2ZAbNLFwBM5uCZjMbpdlkFax4FM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Z7iYA67XKRHo05Db8scBhH4Cr0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/idaroos/Documents/IdeaProjects/java22-TDD-slutprojekt-ida-roos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,17 +39,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.idaroos" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.BufferTest">
+  <component name="RunManager" selected="JUnit.BufferTest.testRemoveWithWaiting">
     <configuration name="BufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Slutprojekt_testdrivenjava" />
+      <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.idaroos.*" />
@@ -72,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Slutprojekt_testdrivenjava" />
+    <configuration name="BufferTest.testAddItemWhenEmptyStringItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.idaroos.*" />
@@ -81,14 +64,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.idaroos" />
-      <option name="MAIN_CLASS_NAME" value="com.idaroos.ItemTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
+      <option name="METHOD_NAME" value="testAddItemWhenEmptyStringItem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.idaroos in Slutprojekt_testdrivenjava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Slutprojekt_testdrivenjava" />
+    <configuration name="BufferTest.testRemoveItemFromBuffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.idaroos.*" />
@@ -96,49 +80,87 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.idaroos" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
+      <option name="METHOD_NAME" value="testRemoveItemFromBuffer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BufferTest.testRemoveWithWaiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java22-TDD-slutprojekt-ida-roos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.idaroos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.idaroos" />
+      <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
+      <option name="METHOD_NAME" value="testRemoveWithWaiting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="idaroos in java22-TDD-slutprojekt-ida-roos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java22-TDD-slutprojekt-ida-roos" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/idaroos" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BufferTest.testRemoveWithWaiting" />
+        <item itemvalue="JUnit.idaroos in java22-TDD-slutprojekt-ida-roos" />
         <item itemvalue="JUnit.BufferTest" />
-        <item itemvalue="JUnit.com.idaroos in Slutprojekt_testdrivenjava" />
-        <item itemvalue="JUnit.ItemTest" />
+        <item itemvalue="JUnit.BufferTest.testRemoveItemFromBuffer" />
+        <item itemvalue="JUnit.BufferTest.testAddItemWhenEmptyStringItem" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="86e1bb8f-cb1b-4063-9a60-c2e39d2e24c4" name="Changes" comment="" />
-      <created>1701867791072</created>
+      <changelist id="cff3c4cb-19d8-4935-9533-82700b75e567" name="Changes" comment="" />
+      <created>1701779564130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701867791072</updated>
-      <workItem from="1701867792830" duration="1006000" />
+      <updated>1701779564130</updated>
+      <workItem from="1701779565566" duration="28533000" />
     </task>
-    <task id="LOCAL−00001" summary="inital commit">
-      <option name="closed" value="true" />
-      <created>1701868349295</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1701868349295</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="inital commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Slutprojekt_testdrivenjava$com_idaroos_in_Slutprojekt_testdrivenjava.ic" NAME="com.idaroos in Slutprojekt_testdrivenjava Coverage Results" MODIFIED="1701868487936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_ida_roos.ic" NAME="idaroos in java22-TDD-slutprojekt-ida-roos Coverage Results" MODIFIED="1701870567174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveWithWaiting.ic" NAME="BufferTest.testRemoveWithWaiting Coverage Results" MODIFIED="1701870627422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.idaroos.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest__1_.ic" NAME="BufferTest (1) Coverage Results" MODIFIED="1701869708284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveItemFromEmptyBuffer.ic" NAME="BufferTest.testRemoveItemFromEmptyBuffer Coverage Results" MODIFIED="1701869786179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest.ic" NAME="BufferTest Coverage Results" MODIFIED="1701870541158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_juhn_kim.ic" NAME="idaroos in java22-TDD-slutprojekt-juhn-kim Coverage Results" MODIFIED="1701866471095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

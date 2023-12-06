@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.idaroos</groupId>
-    <artifactId>Slutprojekt_testdrivenjava</artifactId>
+    <artifactId>java22-TDD-slutprojekt-ida-roos</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
