@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff3c4cb-19d8-4935-9533-82700b75e567" name="Changes" comment="" />
+    <list default="true" id="cff3c4cb-19d8-4935-9533-82700b75e567" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/idaroos/BufferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/BufferTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,14 +28,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2Z7iYA67XKRHo05Db8scBhH4Cr0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/Users/idaroos/Documents/IdeaProjects/java22-TDD-slutprojekt-ida-roos",
@@ -35,11 +52,12 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BufferTest.testRemoveWithWaiting">
+  <component name="RunManager" selected="JUnit.com.idaroos in java22-TDD-slutprojekt-ida-roos">
     <configuration name="BufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
@@ -55,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferTest.testAddItemWhenEmptyStringItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BufferTest.testConsumerWaitingAndProducerNotify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
         <pattern>
@@ -65,13 +83,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.idaroos" />
       <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
-      <option name="METHOD_NAME" value="testAddItemWhenEmptyStringItem" />
+      <option name="METHOD_NAME" value="testConsumerWaitingAndProducerNotify" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferTest.testRemoveItemFromBuffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BufferTest.testRemoveWaitsAndHandlesInterruption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java22-TDD-slutprojekt-ida-roos" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.idaroos" />
       <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
-      <option name="METHOD_NAME" value="testRemoveItemFromBuffer" />
+      <option name="METHOD_NAME" value="testRemoveWaitsAndHandlesInterruption" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,21 +121,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="idaroos in java22-TDD-slutprojekt-ida-roos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.idaroos in java22-TDD-slutprojekt-ida-roos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java22-TDD-slutprojekt-ida-roos" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/idaroos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.idaroos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.idaroos" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BufferTest.testRemoveWithWaiting" />
-        <item itemvalue="JUnit.idaroos in java22-TDD-slutprojekt-ida-roos" />
+        <item itemvalue="JUnit.com.idaroos in java22-TDD-slutprojekt-ida-roos" />
         <item itemvalue="JUnit.BufferTest" />
-        <item itemvalue="JUnit.BufferTest.testRemoveItemFromBuffer" />
-        <item itemvalue="JUnit.BufferTest.testAddItemWhenEmptyStringItem" />
+        <item itemvalue="JUnit.BufferTest.testConsumerWaitingAndProducerNotify" />
+        <item itemvalue="JUnit.BufferTest.testRemoveWithWaiting" />
+        <item itemvalue="JUnit.BufferTest.testRemoveWaitsAndHandlesInterruption" />
       </list>
     </recent_temporary>
   </component>
@@ -129,8 +153,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701779564130</updated>
-      <workItem from="1701779565566" duration="28533000" />
+      <workItem from="1701779565566" duration="30222000" />
     </task>
+    <task id="LOCAL−00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1701871019480</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1701871019480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,20 +179,33 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_ida_roos.ic" NAME="idaroos in java22-TDD-slutprojekt-ida-roos Coverage Results" MODIFIED="1701870567174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveWithWaiting.ic" NAME="BufferTest.testRemoveWithWaiting Coverage Results" MODIFIED="1701870627422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.idaroos.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest__1_.ic" NAME="BufferTest (1) Coverage Results" MODIFIED="1701869708284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.idaroos.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveWaitsAndHandlesInterruption.ic" NAME="BufferTest.testRemoveWaitsAndHandlesInterruption Coverage Results" MODIFIED="1701871595097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest.ic" NAME="BufferTest Coverage Results" MODIFIED="1701873614843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$com_idaroos_in_java22_TDD_slutprojekt_ida_roos.ic" NAME="com.idaroos in java22-TDD-slutprojekt-ida-roos Coverage Results" MODIFIED="1701873634017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_ida_roos.ic" NAME="idaroos in java22-TDD-slutprojekt-ida-roos Coverage Results" MODIFIED="1701871507461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_juhn_kim.ic" NAME="idaroos in java22-TDD-slutprojekt-juhn-kim Coverage Results" MODIFIED="1701866471095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveItemFromEmptyBuffer.ic" NAME="BufferTest.testRemoveItemFromEmptyBuffer Coverage Results" MODIFIED="1701869786179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.idaroos.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest.ic" NAME="BufferTest Coverage Results" MODIFIED="1701870541158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testRemoveWithWaiting.ic" NAME="BufferTest.testRemoveWithWaiting Coverage Results" MODIFIED="1701872217774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.idaroos.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$idaroos_in_java22_TDD_slutprojekt_juhn_kim.ic" NAME="idaroos in java22-TDD-slutprojekt-juhn-kim Coverage Results" MODIFIED="1701866471095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/java22_TDD_slutprojekt_ida_roos$BufferTest_testConsumerWaitingAndProducerNotify.ic" NAME="BufferTest.testConsumerWaitingAndProducerNotify Coverage Results" MODIFIED="1701873588190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.idaroos.*</FILTER>
+    </SUITE>
   </component>
 </project>

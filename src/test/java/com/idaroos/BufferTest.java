@@ -25,7 +25,7 @@ class BufferTest {
     @DisplayName("Test that addItem method in producer works for correct item")
     public void testAddItemProducer() {
         MockItem mockItem = new MockItem("test");
-        assertEquals(true,  producer.addItem(mockItem));
+        assertEquals(true, producer.addItem(mockItem));
     }
 
     @Test
@@ -66,8 +66,6 @@ class BufferTest {
     }
 
 
-
-
     // Test so that consumer is removing item correctly from buffer list
     @Test
     @DisplayName("Testing that method removeItem removes item correctly")
@@ -94,7 +92,7 @@ class BufferTest {
     public void testAddItemWhenEmptyStringItem() {
         MockItem mockItem = new MockItem("");
         producer.addItem(mockItem);
-        assertEquals(true,  producer.addItem(mockItem));
+        assertEquals(true, producer.addItem(mockItem));
     }
 
     // Testing if added correct to buffer list when item value is empty string
@@ -116,6 +114,63 @@ class BufferTest {
 
         pThread.start();
         pThread.interrupt();
+    }
+
+//    @Test
+//    @DisplayName("Test that remove method properly waits and processes items in a producer-consumer scenario")
+//    public void testRemoveWithWaiting() throws InterruptedException {
+//        final int numberOfItems = 5;
+//        Thread producerThread = new Thread(() -> {
+//            for (int i = 0; i < numberOfItems; i++) {
+//                producer.addItem(new MockItem("item" + i));
+//                try {
+//                    Thread.sleep(100);
+//                } catch (InterruptedException e) {
+//                    Thread.currentThread().interrupt();
+//                }
+//            }
+//        });
+//
+//        Thread consumerThread = new Thread(() -> {
+//            for (int i = 0; i < numberOfItems; i++) {
+//                consumer.removeItem();
+//            }
+//        });
+//
+//        producerThread.start();
+//        consumerThread.start();
+//
+//    }
+
+    @Test
+    @DisplayName("Test consumer waiting on empty buffer and resuming on producer notify")
+    public void testConsumerWaitingAndProducerNotify() throws InterruptedException {
+        final int numberOfItems = 5;
+        Thread consumerThread = new Thread(() -> {
+            for (int i = 0; i < numberOfItems; i++) {
+                Item consumedItem = consumer.removeItem();
+                assertNotNull(consumedItem);
+            }
+        });
+
+        consumerThread.start();
+
+
+        Thread producerThread = new Thread(() -> {
+            for (int i = 0; i < numberOfItems; i++) {
+                try {
+                    Thread.sleep(100);
+                    producer.addItem(new MockItem("item" + i));
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+        });
+
+        producerThread.start();
+
+        consumerThread.join();
+        producerThread.join();
     }
 
 
