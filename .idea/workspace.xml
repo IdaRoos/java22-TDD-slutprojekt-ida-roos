@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86e1bb8f-cb1b-4063-9a60-c2e39d2e24c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/idaroos/Buffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/idaroos/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/idaroos/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/idaroos/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/BufferTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/ItemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/MockBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/MockConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/MockItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/idaroos/MockProducer.java" afterDir="false" />
+    <list default="true" id="86e1bb8f-cb1b-4063-9a60-c2e39d2e24c4" name="Changes" comment="inital commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +56,22 @@
       <recent name="com.idaroos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemTest">
+  <component name="RunManager" selected="JUnit.BufferTest">
+    <configuration name="BufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Slutprojekt_testdrivenjava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.idaroos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.idaroos" />
+      <option name="MAIN_CLASS_NAME" value="com.idaroos.BufferTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Slutprojekt_testdrivenjava" />
       <extension name="coverage">
@@ -102,8 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ItemTest" />
+        <item itemvalue="JUnit.BufferTest" />
         <item itemvalue="JUnit.com.idaroos in Slutprojekt_testdrivenjava" />
+        <item itemvalue="JUnit.ItemTest" />
       </list>
     </recent_temporary>
   </component>
@@ -115,15 +117,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701867791072</updated>
-      <workItem from="1701867792830" duration="447000" />
+      <workItem from="1701867792830" duration="1006000" />
     </task>
+    <task id="LOCAL−00001" summary="inital commit">
+      <option name="closed" value="true" />
+      <created>1701868349295</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1701868349295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inital commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="inital commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Slutprojekt_testdrivenjava$com_idaroos_in_Slutprojekt_testdrivenjava.ic" NAME="com.idaroos in Slutprojekt_testdrivenjava Coverage Results" MODIFIED="1701868230353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Slutprojekt_testdrivenjava$com_idaroos_in_Slutprojekt_testdrivenjava.ic" NAME="com.idaroos in Slutprojekt_testdrivenjava Coverage Results" MODIFIED="1701868487936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.idaroos.*</FILTER>
     </SUITE>
   </component>
