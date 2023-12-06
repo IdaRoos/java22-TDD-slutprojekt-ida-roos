@@ -19,7 +19,6 @@ class BufferTest {
         consumer = new MockConsumer(buffer);
     }
 
-    // Test methods for producer
 
     @Test
     @DisplayName("Test that addItem method in producer works for correct item")
@@ -54,7 +53,7 @@ class BufferTest {
     }
 
     @Test
-    @DisplayName("Test specific items are added to Buffer")
+    @DisplayName("Test specific items are added to Buffer list")
     public void testSpecificItemsAdded() {
         MockItem item1 = new MockItem("item1");
         MockItem item2 = new MockItem("item2");
@@ -68,7 +67,7 @@ class BufferTest {
 
     // Test so that consumer is removing item correctly from buffer list
     @Test
-    @DisplayName("Testing that method removeItem removes item correctly")
+    @DisplayName("Testing that method removeItem removes item correctly from Buffer list")
     public void testRemoveItemFromBuffer() {
         MockItem mockItem = new MockItem("test");
         producer.addItem(mockItem);
@@ -80,9 +79,9 @@ class BufferTest {
 
     // Testing so that producer is not adding item when value is null
     @Test
-    @DisplayName("Testing addItem if item value is null")
+    @DisplayName("Testing if producer adds item when value is null")
     public void testAddItemWhenNullItem() {
-        assertThrows(NullPointerException.class, () -> new MockItem(null));
+        assertThrows(NullPointerException.class, () -> producer.addItem(new MockItem(null)));
 
     }
 
@@ -95,13 +94,22 @@ class BufferTest {
         assertEquals(true, producer.addItem(mockItem));
     }
 
-    // Testing if added correct to buffer list when item value is empty string
+    // Testing if item is added to buffer list when item value is empty string
     @Test
     @DisplayName("Testing addItem if item value is empty string")
     public void testBufferWhenEmptyStringItem() {
         MockItem mockItem = new MockItem("");
         producer.addItem(mockItem);
         assertFalse(buffer.getBufferQueue().isEmpty());
+    }
+
+    @Test
+    @DisplayName("Test buffer with different data types")
+    public void testBufferWithVariousDataTypes() {
+        producer.addItem(new MockItem("stringItem"));
+        producer.addItem(new MockItem("123"));
+        producer.addItem(new MockItem("!@#"));
+        assertEquals(4, buffer.getBufferQueue().size());
     }
 
 
@@ -116,31 +124,6 @@ class BufferTest {
         pThread.interrupt();
     }
 
-//    @Test
-//    @DisplayName("Test that remove method properly waits and processes items in a producer-consumer scenario")
-//    public void testRemoveWithWaiting() throws InterruptedException {
-//        final int numberOfItems = 5;
-//        Thread producerThread = new Thread(() -> {
-//            for (int i = 0; i < numberOfItems; i++) {
-//                producer.addItem(new MockItem("item" + i));
-//                try {
-//                    Thread.sleep(100);
-//                } catch (InterruptedException e) {
-//                    Thread.currentThread().interrupt();
-//                }
-//            }
-//        });
-//
-//        Thread consumerThread = new Thread(() -> {
-//            for (int i = 0; i < numberOfItems; i++) {
-//                consumer.removeItem();
-//            }
-//        });
-//
-//        producerThread.start();
-//        consumerThread.start();
-//
-//    }
 
     @Test
     @DisplayName("Test consumer waiting on empty buffer and resuming on producer notify")
